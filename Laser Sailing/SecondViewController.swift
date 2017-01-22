@@ -9,11 +9,15 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    @IBOutlet weak var webView: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
+        let laserSailingURL = URL(string: "http://www.lasersailing.com.au")
+        let laserSailingURLRequest = URLRequest(url: laserSailingURL!)
+        webView.loadRequest(laserSailingURLRequest)
     }
     
     /*
@@ -25,5 +29,14 @@ class SecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func goForward(_ sender: Any) {
+        webView.goBack()
+    }
+    
+    @IBAction func goBack(_ sender: Any) {
+        webView.goForward()
+    }
+    
 
 }

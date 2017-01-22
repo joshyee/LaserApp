@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,19 +26,8 @@
                                 <rect key="frame" x="93" y="177" width="135" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="HUf-9W-tMF">
-                                <rect key="frame" x="80" y="97" width="160" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="Mco-x4-PBD"/>
-                                    <constraint firstAttribute="height" constant="60" id="ns3-Yj-KCn"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="HUf-9W-tMF" firstAttribute="centerX" secondItem="YhD-Qi-gqu" secondAttribute="centerX" id="CNE-oM-p13"/>
-                            <constraint firstItem="HUf-9W-tMF" firstAttribute="centerY" secondItem="YhD-Qi-gqu" secondAttribute="centerY" constant="-157" id="cpN-yy-MpH"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Upcoming Events" id="eZe-Bd-nB4"/>
                 </viewController>
@@ -146,7 +136,7 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
         <!--Latest News-->
         <scene sceneID="IlB-eh-DXa">
             <objects>
-                <viewController id="EbY-vC-Czu" customClass="SecondViewController" customModule="Laser_Sailing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="EbY-vC-Czu" customClass="SecondViewController" customModule="Laser_Sailing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ksZ-Rw-bwB"/>
                         <viewControllerLayoutGuide type="bottom" id="FVd-60-aRY"/>
@@ -154,9 +144,42 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
                     <view key="view" contentMode="scaleToFill" id="fnq-ZK-4U7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iqh-Jo-4Es">
+                                <rect key="frame" x="0.0" y="107" width="320" height="412"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvg-Tx-oNd">
+                                <rect key="frame" x="16" y="72" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="goBack:" destination="EbY-vC-Czu" eventType="touchUpInside" id="yD4-wc-QOJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwy-0f-pRC">
+                                <rect key="frame" x="243" y="72" width="61" height="30"/>
+                                <state key="normal" title="Forward"/>
+                                <connections>
+                                    <action selector="goForward:" destination="EbY-vC-Czu" eventType="touchUpInside" id="1o5-j0-cOf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fwy-0f-pRC" secondAttribute="trailing" id="DbQ-Zy-jPh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Dvg-Tx-oNd" secondAttribute="leading" id="HdY-s7-qaV"/>
+                            <constraint firstItem="FVd-60-aRY" firstAttribute="top" secondItem="Iqh-Jo-4Es" secondAttribute="bottom" id="KCD-B6-0aV"/>
+                            <constraint firstItem="fwy-0f-pRC" firstAttribute="top" secondItem="ksZ-Rw-bwB" secondAttribute="bottom" constant="8" id="cGB-vV-r46"/>
+                            <constraint firstItem="Dvg-Tx-oNd" firstAttribute="top" secondItem="ksZ-Rw-bwB" secondAttribute="bottom" constant="8" id="f7H-fM-dnH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iqh-Jo-4Es" secondAttribute="trailing" constant="-16" id="lT4-Pd-bfw"/>
+                            <constraint firstItem="Iqh-Jo-4Es" firstAttribute="leading" secondItem="fnq-ZK-4U7" secondAttribute="leadingMargin" constant="-16" id="uzK-Ha-kyk"/>
+                            <constraint firstItem="Iqh-Jo-4Es" firstAttribute="top" secondItem="ksZ-Rw-bwB" secondAttribute="bottom" constant="43" id="v9Q-zu-Gra"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Latest News" id="NTo-cp-okz"/>
+                    <connections>
+                        <outlet property="webView" destination="Iqh-Jo-4Es" id="GWb-eo-PRZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJ4-fw-NWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
