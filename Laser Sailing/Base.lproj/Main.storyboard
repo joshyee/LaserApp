@@ -13,7 +13,7 @@
         <!--Upcoming Events-->
         <scene sceneID="dKx-DO-EAA">
             <objects>
-                <viewController id="VCI-uz-oVW" sceneMemberID="viewController">
+                <viewController id="VCI-uz-oVW" customClass="UpcomingEvents" customModule="Laser_Sailing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JRB-th-UQS"/>
                         <viewControllerLayoutGuide type="bottom" id="5R0-kf-BGA"/>
@@ -26,14 +26,28 @@
                                 <rect key="frame" x="93" y="177" width="135" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nzh-h4-28M">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nzh-h4-28M" firstAttribute="leading" secondItem="YhD-Qi-gqu" secondAttribute="leadingMargin" constant="-16" id="EkF-bn-1r3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nzh-h4-28M" secondAttribute="trailing" constant="-16" id="UrB-wD-n2X"/>
+                            <constraint firstItem="Nzh-h4-28M" firstAttribute="centerX" secondItem="YhD-Qi-gqu" secondAttribute="centerX" id="cjI-RN-6kZ"/>
+                            <constraint firstItem="5R0-kf-BGA" firstAttribute="top" secondItem="Nzh-h4-28M" secondAttribute="bottom" id="shh-6x-MwO"/>
+                            <constraint firstItem="Nzh-h4-28M" firstAttribute="top" secondItem="JRB-th-UQS" secondAttribute="bottom" id="xhC-vI-kLi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Upcoming Events" id="eZe-Bd-nB4"/>
+                    <connections>
+                        <outlet property="upcomingEventsView" destination="Nzh-h4-28M" id="9cI-CD-Ghl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAf-un-aO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2216" y="351"/>
+            <point key="canvasLocation" x="2214.375" y="350.7042253521127"/>
         </scene>
         <!--Chat-->
         <scene sceneID="hSf-wx-acV">
@@ -149,15 +163,15 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
                                 <rect key="frame" x="0.0" y="107" width="320" height="412"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvg-Tx-oNd">
-                                <rect key="frame" x="16" y="72" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dvg-Tx-oNd">
+                                <rect key="frame" x="16" y="72" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="goBack:" destination="EbY-vC-Czu" eventType="touchUpInside" id="yD4-wc-QOJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwy-0f-pRC">
-                                <rect key="frame" x="243" y="72" width="61" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwy-0f-pRC">
+                                <rect key="frame" x="248" y="72" width="56" height="30"/>
                                 <state key="normal" title="Forward"/>
                                 <connections>
                                     <action selector="goForward:" destination="EbY-vC-Czu" eventType="touchUpInside" id="1o5-j0-cOf"/>
