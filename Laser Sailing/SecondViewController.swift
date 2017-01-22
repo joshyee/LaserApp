@@ -7,40 +7,15 @@
 //
 
 import UIKit
-import GoogleMaps
 
 class SecondViewController: UIViewController {
 
-    @IBOutlet weak var menuView: UIView!
-    
-    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
-    
-    var menuShowing = false
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        menuView.layer.shadowOpacity = 0.5
-        menuView.layer.shadowRadius = 4
         
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func openMenu(_ sender: Any) {
-        
-        if(menuShowing) {
-            leadingConstraint.constant = 320
-        } else {
-            leadingConstraint.constant = 190
-            
-            UIView.animate(withDuration: 0.3, animations: {
-                self.view.layoutIfNeeded()
-            })
-        }
-        
-        menuShowing = !menuShowing
-    }
-
     /*
     // MARK: - Navigation
 
