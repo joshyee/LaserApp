@@ -19,7 +19,9 @@ class SecondViewController: UIViewController {
         let laserSailingURL = URL(string: "http://www.lasersailing.com.au")
         let laserSailingURLRequest = URLRequest(url: laserSailingURL!)
         webView.loadRequest(laserSailingURLRequest)
+        
     }
+    
     
     /*
     // MARK: - Navigation

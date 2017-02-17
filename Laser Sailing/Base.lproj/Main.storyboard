@@ -113,11 +113,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tp5-VW-Bda">
-                                <rect key="frame" x="40" y="283" width="240" height="196"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">With a rig capable of rotating freely, a common challenge in the Laser is setting the mainsheet correctly downwind.
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iug-Pb-n97">
+                                <rect key="frame" x="40" y="296" width="240" height="240"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="61x-Es-rwb">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="651"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="651" id="0YJ-t4-x5D"/>
+                                        </constraints>
+                                        <mutableString key="text">With a rig capable of rotating freely, a common challenge in the Laser is setting the mainsheet correctly downwind.
 
 Having the boom out past 90 degrees can be effective to help set the sail in very light winds or momentarily strategically or tactically when working hard by lee either in other conditions.
 
@@ -129,23 +134,37 @@ However, for most other times, it pays to sail with the boom further back than t
 
 – Allowing us to sail a straighter course with less distance.
 
-So, next time you go sailing, get out a permanent marker, set the boom to 90 degrees on shore, and mark the sheet at the boom block. This may become a valuable reference point in a search for a better feeling and speed downwind.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+So, next time you go sailing, get out a permanent marker, set the boom to 90 degrees on shore, and mark the sheet at the boom block. This may become a valuable reference point in a search for a better feeling and speed downwind.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="61x-Es-rwb" secondAttribute="trailing" id="9Rg-bY-kvR"/>
+                                    <constraint firstAttribute="height" constant="240" id="E3l-CS-wcg"/>
+                                    <constraint firstAttribute="bottom" secondItem="61x-Es-rwb" secondAttribute="bottom" id="LIQ-gN-Aqb"/>
+                                    <constraint firstItem="61x-Es-rwb" firstAttribute="centerX" secondItem="Iug-Pb-n97" secondAttribute="centerX" id="QfC-vQ-mw0"/>
+                                    <constraint firstItem="61x-Es-rwb" firstAttribute="top" secondItem="Iug-Pb-n97" secondAttribute="top" id="bcp-b7-XQZ"/>
+                                    <constraint firstAttribute="width" constant="240" id="gVi-4Q-UYb"/>
+                                    <constraint firstItem="61x-Es-rwb" firstAttribute="leading" secondItem="Iug-Pb-n97" secondAttribute="leading" id="l1F-GT-UNK"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Iug-Pb-n97" firstAttribute="top" secondItem="ivM-Ac-1VF" secondAttribute="bottom" constant="21" id="1dJ-1o-Fuw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iug-Pb-n97" secondAttribute="trailing" constant="24" id="2D3-yV-I3h"/>
                             <constraint firstItem="ivM-Ac-1VF" firstAttribute="centerY" secondItem="bGd-Fo-Wej" secondAttribute="centerY" constant="-24" id="7k5-ow-fF1"/>
                             <constraint firstItem="gpN-0w-uPf" firstAttribute="centerY" secondItem="bGd-Fo-Wej" secondAttribute="centerY" constant="-122.5" id="FlR-Ks-GpR"/>
                             <constraint firstItem="gpN-0w-uPf" firstAttribute="centerX" secondItem="bGd-Fo-Wej" secondAttribute="centerX" id="PlJ-gG-qbs"/>
+                            <constraint firstItem="Iug-Pb-n97" firstAttribute="leading" secondItem="bGd-Fo-Wej" secondAttribute="leadingMargin" constant="24" id="SLo-Lt-KjK"/>
                             <constraint firstItem="ivM-Ac-1VF" firstAttribute="centerX" secondItem="bGd-Fo-Wej" secondAttribute="centerX" id="gNk-9y-0Xc"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Q8-Em-0Xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1418" y="1353"/>
+            <point key="canvasLocation" x="1417.5" y="1352.1126760563379"/>
         </scene>
         <!--Latest News-->
         <scene sceneID="IlB-eh-DXa">
@@ -246,11 +265,16 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n3U-CA-ufl">
-                                <rect key="frame" x="40" y="283" width="240" height="191"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Struggling to pull enough vang on in windy conditions?
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ScE-HB-QFA">
+                                <rect key="frame" x="40" y="296" width="240" height="240"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tzN-PY-y9l">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="368"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="368" id="Baw-e8-bWy"/>
+                                        </constraints>
+                                        <string key="text">Struggling to pull enough vang on in windy conditions?
 
 You should try taking a purchase out of your vang system…
 
@@ -260,25 +284,38 @@ No, by taking a purchase out of the system you can set your vang up with a handl
 
 This allows you to pull from 0 vang to 100% in one easy movement.
 
-No more needing two pulls of the vang to get it to max, and no more trying to get the hardest bit of the vang on by pulling a skinny rope.
-
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+No more needing two pulls of the vang to get it to max, and no more trying to get the hardest bit of the vang on by pulling a skinny rope.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tzN-PY-y9l" firstAttribute="top" secondItem="ScE-HB-QFA" secondAttribute="top" id="39c-CV-mJP"/>
+                                    <constraint firstAttribute="trailing" secondItem="tzN-PY-y9l" secondAttribute="trailing" id="53j-lK-kM9"/>
+                                    <constraint firstAttribute="bottom" secondItem="tzN-PY-y9l" secondAttribute="bottom" id="PAh-8q-Jle"/>
+                                    <constraint firstAttribute="width" constant="240" id="SWo-iH-2ve"/>
+                                    <constraint firstItem="tzN-PY-y9l" firstAttribute="centerX" secondItem="ScE-HB-QFA" secondAttribute="centerX" id="iTh-Jn-aDk"/>
+                                    <constraint firstAttribute="height" constant="240" id="shf-mC-V6L"/>
+                                    <constraint firstItem="tzN-PY-y9l" firstAttribute="leading" secondItem="ScE-HB-QFA" secondAttribute="leading" id="wUc-ti-54f"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5eQ-v9-HG1" firstAttribute="centerX" secondItem="dm7-PS-i5X" secondAttribute="centerX" id="8FY-aT-0rj"/>
+                            <constraint firstItem="ScE-HB-QFA" firstAttribute="top" secondItem="yIl-ZK-bln" secondAttribute="bottom" constant="21" id="AIy-Im-2Y4"/>
                             <constraint firstItem="5eQ-v9-HG1" firstAttribute="centerY" secondItem="dm7-PS-i5X" secondAttribute="centerY" constant="-122.5" id="HdX-ai-gA0"/>
                             <constraint firstItem="yIl-ZK-bln" firstAttribute="centerX" secondItem="dm7-PS-i5X" secondAttribute="centerX" id="Nh5-Ut-cbm"/>
+                            <constraint firstItem="ScE-HB-QFA" firstAttribute="leading" secondItem="dm7-PS-i5X" secondAttribute="leadingMargin" constant="24" id="SYb-8x-h5v"/>
                             <constraint firstItem="yIl-ZK-bln" firstAttribute="centerY" secondItem="dm7-PS-i5X" secondAttribute="centerY" constant="-24" id="W9A-VS-Uzo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ScE-HB-QFA" secondAttribute="trailing" constant="24" id="icY-jW-oP0"/>
+                            <constraint firstItem="ScE-HB-QFA" firstAttribute="centerX" secondItem="dm7-PS-i5X" secondAttribute="centerX" id="raj-BZ-AcW"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coP-Tu-QMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-218" y="1353"/>
+            <point key="canvasLocation" x="-219.375" y="1352.1126760563379"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Hyw-M5-IFt">
@@ -302,7 +339,8 @@ No more needing two pulls of the vang to get it to max, and no more trying to ge
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh1-if-qHY">
-                                <rect key="frame" x="124" y="207" width="72" height="30"/>
+                                <rect key="frame" x="113" y="204" width="94" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Mainsheet">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -311,7 +349,8 @@ No more needing two pulls of the vang to get it to max, and no more trying to ge
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpQ-Bj-s4b">
-                                <rect key="frame" x="131" y="257" width="59" height="30"/>
+                                <rect key="frame" x="122" y="254" width="76" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Traveller">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -320,7 +359,8 @@ No more needing two pulls of the vang to get it to max, and no more trying to ge
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHW-Ma-qUI">
-                                <rect key="frame" x="100" y="309" width="120" height="30"/>
+                                <rect key="frame" x="82" y="306" width="157" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Calibration Marks">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -329,7 +369,8 @@ No more needing two pulls of the vang to get it to max, and no more trying to ge
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ab1-sj-lcV">
-                                <rect key="frame" x="139" y="363" width="42" height="30"/>
+                                <rect key="frame" x="133" y="360" width="54" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Tillers">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -338,7 +379,8 @@ No more needing two pulls of the vang to get it to max, and no more trying to ge
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkR-Rw-Xy1">
-                                <rect key="frame" x="143" y="415" width="35" height="30"/>
+                                <rect key="frame" x="137" y="412" width="46" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Vang">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -394,14 +436,26 @@ No more needing two pulls of the vang to get it to max, and no more trying to ge
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nMS-RT-qpl">
-                                <rect key="frame" x="40" y="283" width="240" height="191"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">As we all know the Laser is a simple boat. Just you, four ropes and a sail. So if you want to win in a Laser you need to have all areas completely covered. There is no reason or excuse to have poor gear on your Laser. The cost of losing a race because of gear failure or even just a general lack of speed because of equipment is inexcusable. However, being a one design boat takes a lot of our choice out of what gear we use but in this there are a few exceptions and one of these is the tiller.
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jpp-Y4-7FJ">
+                                <rect key="frame" x="40" y="296" width="240" height="240"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Dh4-qc-JKT">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="1219"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1219" id="OJx-Ut-BKk"/>
+                                        </constraints>
+                                        <mutableString key="text">As we all know the Laser is a simple boat. Just you, four ropes and a sail. So if you want to win in a Laser you need to have all areas completely covered. There is no reason or excuse to have poor gear on your Laser. 
+
+The cost of losing a race because of gear failure or even just a general lack of speed because of equipment is inexcusable. 
+
+However, being a one design boat takes a lot of our choice out of what gear we use but in this there are a few exceptions and one of these is the tiller.
 
 There are a wide range of tillers you can buy and I’m going to hopefully put you on the path to finding the correct one for you.
-So what makes a good tiller? First of all it needs to be stiff. 20 years ago aluminum tillers would have been an acceptable choice but in our modern age with newer and lighter fabrics always emerging on the market the Laser world has shifted to carbon. Carbon allows you to have a lightweight tiller that is stiff and responsive. The benefits of this are many but mainly because:
+
+So what makes a good tiller? First of all it needs to be stiff. 20 years ago aluminum tillers would have been an acceptable choice but in our modern age with newer and lighter fabrics always emerging on the market the Laser world has shifted to carbon. 
+
+Carbon allows you to have a lightweight tiller that is stiff and responsive. The benefits of this are many but mainly because:
 
 1. It gives you better feel for the rudder
 
@@ -412,16 +466,35 @@ So what makes a good tiller? First of all it needs to be stiff. 20 years ago alu
 But just because it’s carbon doesn’t mean it’s the best as there is still a huge array of carbon brands to choose from. When looking for a tiller some of the best points to look for are:
 
 Thickness – you want a tiller that is as thin as possible without giving up rigidity to allow the traveler to pass smoothly through tacks.
+
 Weight – Just as a cyclist looks to save grams on his bike wherever he can so do we as sailors look to save weight on our boats
+
 Simplicity – A tiller that is easy to use and reliable in any situation. You don’t need the best looking tiller, just the one that functions the best.
-I personally have been using the same tiller for the last 3 years. It doesn’t matter what boat I am sailing or where, I will always have my tiller with me because I know I can trust it to perform consistently. In the long run the extra bit of money you fork over for a good tiller will pay you back 10 fold. I hope you can use this as a guide the next time you decide to buy a new tiller.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+
+I personally have been using the same tiller for the last 3 years. It doesn’t matter what boat I am sailing or where, I will always have my tiller with me because I know I can trust it to perform consistently. 
+
+In the long run the extra bit of money you fork over for a good tiller will pay you back 10 fold. I hope you can use this as a guide the next time you decide to buy a new tiller.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="513-GR-ySV"/>
+                                    <constraint firstItem="Dh4-qc-JKT" firstAttribute="leading" secondItem="Jpp-Y4-7FJ" secondAttribute="leading" id="7uu-hg-7JL"/>
+                                    <constraint firstItem="Dh4-qc-JKT" firstAttribute="top" secondItem="Jpp-Y4-7FJ" secondAttribute="top" id="Adh-e5-xTn"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dh4-qc-JKT" secondAttribute="trailing" id="rKf-hS-IMe"/>
+                                    <constraint firstItem="Dh4-qc-JKT" firstAttribute="centerX" secondItem="Jpp-Y4-7FJ" secondAttribute="centerX" id="saH-GY-kNI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dh4-qc-JKT" secondAttribute="bottom" id="yGN-Lz-r20"/>
+                                    <constraint firstAttribute="height" constant="240" id="z0D-2x-sTS"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jpp-Y4-7FJ" secondAttribute="trailing" constant="24" id="08L-AQ-6KG"/>
+                            <constraint firstItem="Jpp-Y4-7FJ" firstAttribute="top" secondItem="C9J-1k-682" secondAttribute="bottom" constant="21" id="64w-NF-1Rw"/>
                             <constraint firstItem="Bsa-zY-FgK" firstAttribute="centerY" secondItem="fNU-mh-ZaX" secondAttribute="centerY" constant="-122.5" id="C2A-GR-ER5"/>
+                            <constraint firstItem="Jpp-Y4-7FJ" firstAttribute="leading" secondItem="fNU-mh-ZaX" secondAttribute="leadingMargin" constant="24" id="Y00-7h-2G7"/>
                             <constraint firstItem="Bsa-zY-FgK" firstAttribute="centerX" secondItem="fNU-mh-ZaX" secondAttribute="centerX" id="jAO-6w-3KX"/>
                             <constraint firstItem="C9J-1k-682" firstAttribute="centerX" secondItem="fNU-mh-ZaX" secondAttribute="centerX" id="y9K-io-i59"/>
                             <constraint firstItem="C9J-1k-682" firstAttribute="centerY" secondItem="fNU-mh-ZaX" secondAttribute="centerY" constant="-24" id="zj5-f0-SEr"/>
@@ -430,7 +503,7 @@ I personally have been using the same tiller for the last 3 years. It doesn’t 
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6LJ-Xn-ud2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-216" y="2140"/>
+            <point key="canvasLocation" x="-217.5" y="2138.0281690140846"/>
         </scene>
         <!--Calibration Marks-->
         <scene sceneID="E2D-EX-iHC">
@@ -457,11 +530,18 @@ I personally have been using the same tiller for the last 3 years. It doesn’t 
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dWq-Rm-2Ta">
-                                <rect key="frame" x="40" y="283" width="240" height="191"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Having some easy to see calibration marks are a tried and tested way of knowing your sail settings at any given time while sailing. It means you can set up the sail to exactly how you you like it from your speed testing pre race and saves valuable seconds at each mark while you are changing each control.
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpK-PI-oqO">
+                                <rect key="frame" x="40" y="296" width="240" height="240"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ety-Sk-RLC">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="650"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="650" id="FDE-qY-r2z"/>
+                                        </constraints>
+                                        <mutableString key="text">Having some easy to see calibration marks are a tried and tested way of knowing your sail settings at any given time while sailing. 
+
+It means you can set up the sail to exactly how you you like it from your speed testing pre race and saves valuable seconds at each mark while you are changing each control.
 
 The two most important calibration points are the outhaul and vang as they are slightly harder to set by eye than the cunningham.
 
@@ -469,23 +549,37 @@ For the outhaul, try putting a few wraps of tape around the boom where your outh
 
 The vang marks should be on the middle primary line of the vang cascade, again wrapping some electrical tape around the rope and using the blocks as a reference point.
 
-Next time you are out pre race, tuning up, take note of what your fast settings are upwind and downwind so you can quickly go back to these settings as you go around the race course!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+Next time you are out pre race, tuning up, take note of what your fast settings are upwind and downwind so you can quickly go back to these settings as you go around the race course!</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="1ll-vg-QCJ"/>
+                                    <constraint firstItem="ety-Sk-RLC" firstAttribute="top" secondItem="YpK-PI-oqO" secondAttribute="top" id="78D-bf-Xyc"/>
+                                    <constraint firstItem="ety-Sk-RLC" firstAttribute="leading" secondItem="YpK-PI-oqO" secondAttribute="leading" id="O54-x3-TXr"/>
+                                    <constraint firstAttribute="bottom" secondItem="ety-Sk-RLC" secondAttribute="bottom" id="d6I-Dh-dxb"/>
+                                    <constraint firstAttribute="trailing" secondItem="ety-Sk-RLC" secondAttribute="trailing" id="ecO-ib-1FX"/>
+                                    <constraint firstItem="ety-Sk-RLC" firstAttribute="centerX" secondItem="YpK-PI-oqO" secondAttribute="centerX" id="jdn-v5-fRs"/>
+                                    <constraint firstAttribute="width" constant="240" id="kX7-tE-5eM"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ioq-QE-kpM" firstAttribute="centerY" secondItem="Jz6-7X-2RO" secondAttribute="centerY" constant="-122.5" id="6jd-zQ-k0h"/>
+                            <constraint firstItem="YpK-PI-oqO" firstAttribute="top" secondItem="rhL-bh-JMR" secondAttribute="bottom" constant="21" id="BCS-Bq-kQd"/>
+                            <constraint firstItem="YpK-PI-oqO" firstAttribute="leading" secondItem="Jz6-7X-2RO" secondAttribute="leadingMargin" constant="24" id="CbJ-T9-j8C"/>
                             <constraint firstItem="rhL-bh-JMR" firstAttribute="centerX" secondItem="Jz6-7X-2RO" secondAttribute="centerX" id="Djm-fN-zyh"/>
                             <constraint firstItem="rhL-bh-JMR" firstAttribute="centerY" secondItem="Jz6-7X-2RO" secondAttribute="centerY" constant="-24" id="ELY-r5-5SE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YpK-PI-oqO" secondAttribute="trailing" constant="24" id="qDM-Rp-P2e"/>
                             <constraint firstItem="Ioq-QE-kpM" firstAttribute="centerX" secondItem="Jz6-7X-2RO" secondAttribute="centerX" id="raR-ov-sFm"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PY1-Um-YUM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="608" y="2140"/>
+            <point key="canvasLocation" x="607.5" y="2138.0281690140846"/>
         </scene>
         <!--Traveller-->
         <scene sceneID="u9c-cA-4iN">
@@ -519,29 +613,58 @@ Next time you are out pre race, tuning up, take note of what your fast settings 
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rbk-L1-X9Y">
-                                <rect key="frame" x="40" y="283" width="240" height="191"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">The traveller on a laser is super simple consisting of one piece of rope and the traveller block. It’s easy to get right, however when done wrong it can dramatically influence the height and speed of your boat. The main objective of your traveller is to ensure the sail and end of boom is sheeted to the back corner of the boat whilst sailing upwind. This gives the sail the best angle of attack to the wind, giving your sail ultimate leech tension helping you to burn the boats around you. In light winds it is super important that your traveller is pulled really tight so there is minimal distance between the deck and traveller block, this can be made easier by having a low profile tiller and a rope handle.
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7J-cU-yKO">
+                                <rect key="frame" x="40" y="296" width="240" height="240"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UJX-e4-en3">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="615"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="615" id="tdM-JC-pwB"/>
+                                        </constraints>
+                                        <mutableString key="text">The traveller on a laser is super simple consisting of one piece of rope and the traveller block. It’s easy to get right, however when done wrong it can dramatically influence the height and speed of your boat. 
 
-The traveller rope needs to be something that has little to no stretch, something like dyneema is perfect. When tying the traveller use a simple half hitch in the centre and ensure that the distance between the knot and traveller is as small as possible.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+The main objective of your traveller is to ensure the sail and end of boom is sheeted to the back corner of the boat whilst sailing upwind. 
+
+This gives the sail the best angle of attack to the wind, giving your sail ultimate leech tension helping you to burn the boats around you. 
+
+In light winds it is super important that your traveller is pulled really tight so there is minimal distance between the deck and traveller block, this can be made easier by having a low profile tiller and a rope handle.
+
+The traveller rope needs to be something that has little to no stretch, something like dyneema is perfect. 
+
+When tying the traveller use a simple half hitch in the centre and ensure that the distance between the knot and traveller is as small as possible.
+
+</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UJX-e4-en3" firstAttribute="centerX" secondItem="q7J-cU-yKO" secondAttribute="centerX" id="Btx-64-Y7Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="UJX-e4-en3" secondAttribute="bottom" id="Vaz-cQ-7de"/>
+                                    <constraint firstAttribute="trailing" secondItem="UJX-e4-en3" secondAttribute="trailing" id="Vx8-AE-58Z"/>
+                                    <constraint firstItem="UJX-e4-en3" firstAttribute="leading" secondItem="q7J-cU-yKO" secondAttribute="leading" id="X0z-be-UeA"/>
+                                    <constraint firstItem="UJX-e4-en3" firstAttribute="top" secondItem="q7J-cU-yKO" secondAttribute="top" id="ZBB-4v-vgi"/>
+                                    <constraint firstAttribute="height" constant="240" id="aP4-H7-qxb"/>
+                                    <constraint firstAttribute="width" constant="240" id="wwv-VE-nLE"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Grg-YO-Lsm" firstAttribute="centerX" secondItem="sIy-ZN-FKG" secondAttribute="centerX" id="8eL-Y1-SMG"/>
                             <constraint firstItem="8aX-Pz-OXy" firstAttribute="centerY" secondItem="sIy-ZN-FKG" secondAttribute="centerY" constant="-24" id="Eq9-vH-uvS"/>
+                            <constraint firstItem="q7J-cU-yKO" firstAttribute="top" secondItem="8aX-Pz-OXy" secondAttribute="bottom" constant="21" id="G41-xc-PSo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q7J-cU-yKO" secondAttribute="trailing" constant="24" id="H2t-MA-TGs"/>
                             <constraint firstItem="Grg-YO-Lsm" firstAttribute="centerY" secondItem="sIy-ZN-FKG" secondAttribute="centerY" constant="-122.5" id="TPD-by-3ZX"/>
                             <constraint firstItem="8aX-Pz-OXy" firstAttribute="centerX" secondItem="sIy-ZN-FKG" secondAttribute="centerX" id="uBN-LU-f1z"/>
+                            <constraint firstItem="q7J-cU-yKO" firstAttribute="leading" secondItem="sIy-ZN-FKG" secondAttribute="leadingMargin" constant="24" id="xlj-OB-dMf"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pge-9m-ahe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1418" y="2140"/>
+            <point key="canvasLocation" x="1417.5" y="2138.0281690140846"/>
         </scene>
         <!--Tips-->
         <scene sceneID="dP6-o0-gSW">
