@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ecp-eL-1bq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Msq-sQ-IMj">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -122,7 +122,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="651" id="0YJ-t4-x5D"/>
                                         </constraints>
-                                        <mutableString key="text">With a rig capable of rotating freely, a common challenge in the Laser is setting the mainsheet correctly downwind.
+                                        <string key="text">With a rig capable of rotating freely, a common challenge in the Laser is setting the mainsheet correctly downwind.
 
 Having the boom out past 90 degrees can be effective to help set the sail in very light winds or momentarily strategically or tactically when working hard by lee either in other conditions.
 
@@ -134,7 +134,7 @@ However, for most other times, it pays to sail with the boom further back than t
 
 – Allowing us to sail a straighter course with less distance.
 
-So, next time you go sailing, get out a permanent marker, set the boom to 90 degrees on shore, and mark the sheet at the boom block. This may become a valuable reference point in a search for a better feeling and speed downwind.</mutableString>
+So, next time you go sailing, get out a permanent marker, set the boom to 90 degrees on shore, and mark the sheet at the boom block. This may become a valuable reference point in a search for a better feeling and speed downwind.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -217,6 +217,108 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJ4-fw-NWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3819.375" y="-244.01408450704227"/>
+        </scene>
+        <!--Sign In-->
+        <scene sceneID="ep1-7V-lDV">
+            <objects>
+                <viewController id="Msq-sQ-IMj" customClass="SignIn" customModule="Laser_Sailing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bpE-5g-tWA"/>
+                        <viewControllerLayoutGuide type="bottom" id="M14-40-7Ch"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H6k-xj-wG5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rha-Yu-SXk">
+                                <rect key="frame" x="16" y="155" width="288" height="258.5"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tXb-Se-uCQ">
+                                        <rect key="frame" x="79.5" y="0.0" width="129" height="29"/>
+                                        <segments>
+                                            <segment title="Sign In"/>
+                                            <segment title="Register"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="signInSelectorChanged:" destination="Msq-sQ-IMj" eventType="valueChanged" id="JDU-gZ-E4u"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1d7-aw-fhT">
+                                        <rect key="frame" x="118" y="58" width="52" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="5hq-ZY-2Je">
+                                        <rect key="frame" x="0.0" y="108.5" width="288" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b8-Km-7Xv">
+                                                <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="el0-hQ-ZhA">
+                                                <rect key="frame" x="94" y="0.0" width="194" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="93Y-My-FRL">
+                                        <rect key="frame" x="0.0" y="168.5" width="288" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfz-IG-ZW8">
+                                                <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AyK-GA-2pG">
+                                                <rect key="frame" x="94" y="0.0" width="194" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEs-R1-7KE">
+                                        <rect key="frame" x="120.5" y="228.5" width="47" height="30"/>
+                                        <state key="normal" title="Sign In"/>
+                                        <connections>
+                                            <action selector="signInButtonTapped:" destination="Msq-sQ-IMj" eventType="touchUpInside" id="abb-Wb-nYe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5hq-ZY-2Je" secondAttribute="trailing" id="0fG-Ld-fli"/>
+                                    <constraint firstAttribute="trailing" secondItem="93Y-My-FRL" secondAttribute="trailing" id="qgD-3T-rCb"/>
+                                    <constraint firstItem="93Y-My-FRL" firstAttribute="leading" secondItem="rha-Yu-SXk" secondAttribute="leading" id="sYF-2b-r6E"/>
+                                    <constraint firstItem="5hq-ZY-2Je" firstAttribute="leading" secondItem="rha-Yu-SXk" secondAttribute="leading" id="swA-1T-bQV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rha-Yu-SXk" firstAttribute="leading" secondItem="H6k-xj-wG5" secondAttribute="leadingMargin" id="hsk-Lf-9CR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rha-Yu-SXk" secondAttribute="trailing" id="kJ6-5w-YbC"/>
+                            <constraint firstItem="rha-Yu-SXk" firstAttribute="centerY" secondItem="H6k-xj-wG5" secondAttribute="centerY" id="pn6-n9-2Jg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="el0-hQ-ZhA" id="Dys-hQ-wXB"/>
+                        <outlet property="passwordTextField" destination="AyK-GA-2pG" id="EwI-ng-29A"/>
+                        <outlet property="signInButton" destination="gEs-R1-7KE" id="sK5-8J-PLu"/>
+                        <outlet property="signInLabel" destination="1d7-aw-fhT" id="VEs-rB-LSk"/>
+                        <outlet property="signInSelector" destination="tXb-Se-uCQ" id="fjL-au-2f6"/>
+                        <segue destination="Ysi-Cp-uun" kind="show" identifier="goHome" id="X3b-mb-uaE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIF-YD-AJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-579" y="-244"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mO2-0S-R4B">
@@ -445,7 +547,7 @@ No more needing two pulls of the vang to get it to max, and no more trying to ge
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1219" id="OJx-Ut-BKk"/>
                                         </constraints>
-                                        <mutableString key="text">As we all know the Laser is a simple boat. Just you, four ropes and a sail. So if you want to win in a Laser you need to have all areas completely covered. There is no reason or excuse to have poor gear on your Laser. 
+                                        <string key="text">As we all know the Laser is a simple boat. Just you, four ropes and a sail. So if you want to win in a Laser you need to have all areas completely covered. There is no reason or excuse to have poor gear on your Laser. 
 
 The cost of losing a race because of gear failure or even just a general lack of speed because of equipment is inexcusable. 
 
@@ -473,7 +575,7 @@ Simplicity – A tiller that is easy to use and reliable in any situation. You d
 
 I personally have been using the same tiller for the last 3 years. It doesn’t matter what boat I am sailing or where, I will always have my tiller with me because I know I can trust it to perform consistently. 
 
-In the long run the extra bit of money you fork over for a good tiller will pay you back 10 fold. I hope you can use this as a guide the next time you decide to buy a new tiller.</mutableString>
+In the long run the extra bit of money you fork over for a good tiller will pay you back 10 fold. I hope you can use this as a guide the next time you decide to buy a new tiller.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -539,7 +641,7 @@ In the long run the extra bit of money you fork over for a good tiller will pay 
                                         <constraints>
                                             <constraint firstAttribute="height" constant="650" id="FDE-qY-r2z"/>
                                         </constraints>
-                                        <mutableString key="text">Having some easy to see calibration marks are a tried and tested way of knowing your sail settings at any given time while sailing. 
+                                        <string key="text">Having some easy to see calibration marks are a tried and tested way of knowing your sail settings at any given time while sailing. 
 
 It means you can set up the sail to exactly how you you like it from your speed testing pre race and saves valuable seconds at each mark while you are changing each control.
 
@@ -549,7 +651,7 @@ For the outhaul, try putting a few wraps of tape around the boom where your outh
 
 The vang marks should be on the middle primary line of the vang cascade, again wrapping some electrical tape around the rope and using the blocks as a reference point.
 
-Next time you are out pre race, tuning up, take note of what your fast settings are upwind and downwind so you can quickly go back to these settings as you go around the race course!</mutableString>
+Next time you are out pre race, tuning up, take note of what your fast settings are upwind and downwind so you can quickly go back to these settings as you go around the race course!</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -622,7 +724,7 @@ Next time you are out pre race, tuning up, take note of what your fast settings 
                                         <constraints>
                                             <constraint firstAttribute="height" constant="615" id="tdM-JC-pwB"/>
                                         </constraints>
-                                        <mutableString key="text">The traveller on a laser is super simple consisting of one piece of rope and the traveller block. It’s easy to get right, however when done wrong it can dramatically influence the height and speed of your boat. 
+                                        <string key="text">The traveller on a laser is super simple consisting of one piece of rope and the traveller block. It’s easy to get right, however when done wrong it can dramatically influence the height and speed of your boat. 
 
 The main objective of your traveller is to ensure the sail and end of boom is sheeted to the back corner of the boat whilst sailing upwind. 
 
@@ -634,7 +736,7 @@ The traveller rope needs to be something that has little to no stretch, somethin
 
 When tying the traveller use a simple half hitch in the centre and ensure that the distance between the knot and traveller is as small as possible.
 
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -665,6 +767,37 @@ When tying the traveller use a simple half hitch in the centre and ensure that t
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pge-9m-ahe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1417.5" y="2138.0281690140846"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dh5-w9-1LU">
+            <objects>
+                <viewController id="Ysi-Cp-uun" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4lU-1n-c7c"/>
+                        <viewControllerLayoutGuide type="bottom" id="41B-5U-eJw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YbO-U8-3yD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're In!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odi-0k-MMj">
+                                <rect key="frame" x="124.5" y="274" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Odi-0k-MMj" firstAttribute="centerY" secondItem="YbO-U8-3yD" secondAttribute="centerY" id="2HK-wh-Zla"/>
+                            <constraint firstItem="Odi-0k-MMj" firstAttribute="centerX" secondItem="YbO-U8-3yD" secondAttribute="centerX" id="BnF-JL-6ZC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcZ-t7-5WK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-579.375" y="529.22535211267609"/>
         </scene>
         <!--Tips-->
         <scene sceneID="dP6-o0-gSW">
