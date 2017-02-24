@@ -122,7 +122,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="651" id="0YJ-t4-x5D"/>
                                         </constraints>
-                                        <mutableString key="text">With a rig capable of rotating freely, a common challenge in the Laser is setting the mainsheet correctly downwind.
+                                        <string key="text">With a rig capable of rotating freely, a common challenge in the Laser is setting the mainsheet correctly downwind.
 
 Having the boom out past 90 degrees can be effective to help set the sail in very light winds or momentarily strategically or tactically when working hard by lee either in other conditions.
 
@@ -134,7 +134,7 @@ However, for most other times, it pays to sail with the boom further back than t
 
 – Allowing us to sail a straighter course with less distance.
 
-So, next time you go sailing, get out a permanent marker, set the boom to 90 degrees on shore, and mark the sheet at the boom block. This may become a valuable reference point in a search for a better feeling and speed downwind.</mutableString>
+So, next time you go sailing, get out a permanent marker, set the boom to 90 degrees on shore, and mark the sheet at the boom block. This may become a valuable reference point in a search for a better feeling and speed downwind.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -445,7 +445,7 @@ No more needing two pulls of the vang to get it to max, and no more trying to ge
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1219" id="OJx-Ut-BKk"/>
                                         </constraints>
-                                        <mutableString key="text">As we all know the Laser is a simple boat. Just you, four ropes and a sail. So if you want to win in a Laser you need to have all areas completely covered. There is no reason or excuse to have poor gear on your Laser. 
+                                        <string key="text">As we all know the Laser is a simple boat. Just you, four ropes and a sail. So if you want to win in a Laser you need to have all areas completely covered. There is no reason or excuse to have poor gear on your Laser. 
 
 The cost of losing a race because of gear failure or even just a general lack of speed because of equipment is inexcusable. 
 
@@ -473,7 +473,7 @@ Simplicity – A tiller that is easy to use and reliable in any situation. You d
 
 I personally have been using the same tiller for the last 3 years. It doesn’t matter what boat I am sailing or where, I will always have my tiller with me because I know I can trust it to perform consistently. 
 
-In the long run the extra bit of money you fork over for a good tiller will pay you back 10 fold. I hope you can use this as a guide the next time you decide to buy a new tiller.</mutableString>
+In the long run the extra bit of money you fork over for a good tiller will pay you back 10 fold. I hope you can use this as a guide the next time you decide to buy a new tiller.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -539,7 +539,7 @@ In the long run the extra bit of money you fork over for a good tiller will pay 
                                         <constraints>
                                             <constraint firstAttribute="height" constant="650" id="FDE-qY-r2z"/>
                                         </constraints>
-                                        <mutableString key="text">Having some easy to see calibration marks are a tried and tested way of knowing your sail settings at any given time while sailing. 
+                                        <string key="text">Having some easy to see calibration marks are a tried and tested way of knowing your sail settings at any given time while sailing. 
 
 It means you can set up the sail to exactly how you you like it from your speed testing pre race and saves valuable seconds at each mark while you are changing each control.
 
@@ -549,7 +549,7 @@ For the outhaul, try putting a few wraps of tape around the boom where your outh
 
 The vang marks should be on the middle primary line of the vang cascade, again wrapping some electrical tape around the rope and using the blocks as a reference point.
 
-Next time you are out pre race, tuning up, take note of what your fast settings are upwind and downwind so you can quickly go back to these settings as you go around the race course!</mutableString>
+Next time you are out pre race, tuning up, take note of what your fast settings are upwind and downwind so you can quickly go back to these settings as you go around the race course!</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -622,7 +622,7 @@ Next time you are out pre race, tuning up, take note of what your fast settings 
                                         <constraints>
                                             <constraint firstAttribute="height" constant="615" id="tdM-JC-pwB"/>
                                         </constraints>
-                                        <mutableString key="text">The traveller on a laser is super simple consisting of one piece of rope and the traveller block. It’s easy to get right, however when done wrong it can dramatically influence the height and speed of your boat. 
+                                        <string key="text">The traveller on a laser is super simple consisting of one piece of rope and the traveller block. It’s easy to get right, however when done wrong it can dramatically influence the height and speed of your boat. 
 
 The main objective of your traveller is to ensure the sail and end of boom is sheeted to the back corner of the boat whilst sailing upwind. 
 
@@ -634,7 +634,7 @@ The traveller rope needs to be something that has little to no stretch, somethin
 
 When tying the traveller use a simple half hitch in the centre and ensure that the distance between the knot and traveller is as small as possible.
 
-</mutableString>
+</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
