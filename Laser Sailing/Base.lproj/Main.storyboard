@@ -255,7 +255,7 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b8-Km-7Xv">
                                                 <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="el0-hQ-ZhA">
@@ -272,7 +272,7 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfz-IG-ZW8">
                                                 <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AyK-GA-2pG">
@@ -298,13 +298,21 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
                                     <constraint firstItem="5hq-ZY-2Je" firstAttribute="leading" secondItem="rha-Yu-SXk" secondAttribute="leading" id="swA-1T-bQV"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="mab-Df-ggw">
+                                <rect key="frame" x="80" y="54" width="160" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="DtK-jj-YH9"/>
+                                    <constraint firstAttribute="height" constant="60" id="pmo-q1-02s"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="mab-Df-ggw" firstAttribute="centerY" secondItem="H6k-xj-wG5" secondAttribute="centerY" constant="-200" id="Qej-W4-YiT"/>
                             <constraint firstItem="rha-Yu-SXk" firstAttribute="leading" secondItem="H6k-xj-wG5" secondAttribute="leadingMargin" id="hsk-Lf-9CR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rha-Yu-SXk" secondAttribute="trailing" id="kJ6-5w-YbC"/>
                             <constraint firstItem="rha-Yu-SXk" firstAttribute="centerY" secondItem="H6k-xj-wG5" secondAttribute="centerY" id="pn6-n9-2Jg"/>
+                            <constraint firstItem="mab-Df-ggw" firstAttribute="centerX" secondItem="H6k-xj-wG5" secondAttribute="centerX" id="zg3-JB-l5a"/>
                         </constraints>
                     </view>
                     <connections>
@@ -313,7 +321,7 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
                         <outlet property="signInButton" destination="gEs-R1-7KE" id="sK5-8J-PLu"/>
                         <outlet property="signInLabel" destination="1d7-aw-fhT" id="VEs-rB-LSk"/>
                         <outlet property="signInSelector" destination="tXb-Se-uCQ" id="fjL-au-2f6"/>
-                        <segue destination="Ysi-Cp-uun" kind="show" identifier="goHome" id="X3b-mb-uaE"/>
+                        <segue destination="ecp-eL-1bq" kind="show" identifier="goHome" id="tvV-yY-hcW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIF-YD-AJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -767,37 +775,6 @@ When tying the traveller use a simple half hitch in the centre and ensure that t
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pge-9m-ahe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1417.5" y="2138.0281690140846"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="dh5-w9-1LU">
-            <objects>
-                <viewController id="Ysi-Cp-uun" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4lU-1n-c7c"/>
-                        <viewControllerLayoutGuide type="bottom" id="41B-5U-eJw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="YbO-U8-3yD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You're In!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odi-0k-MMj">
-                                <rect key="frame" x="124.5" y="274" width="71" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Odi-0k-MMj" firstAttribute="centerY" secondItem="YbO-U8-3yD" secondAttribute="centerY" id="2HK-wh-Zla"/>
-                            <constraint firstItem="Odi-0k-MMj" firstAttribute="centerX" secondItem="YbO-U8-3yD" secondAttribute="centerX" id="BnF-JL-6ZC"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zcZ-t7-5WK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-579.375" y="529.22535211267609"/>
         </scene>
         <!--Tips-->
         <scene sceneID="dP6-o0-gSW">
