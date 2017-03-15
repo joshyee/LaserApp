@@ -31,6 +31,7 @@
 		03594B711E0396F400A4C320 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03594B701E0396F400A4C320 /* GoogleMaps.framework */; };
 		03594B761E039AA600A4C320 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03594B751E039AA600A4C320 /* GoogleMaps.bundle */; };
 		035BAF351E34A09B00AEA4A1 /* UpcomingEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035BAF341E34A09B00AEA4A1 /* UpcomingEvents.swift */; };
+		038200C21E5FD51000DE03F1 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038200C11E5FD51000DE03F1 /* ChatViewController.swift */; };
 		03B808CD1DF0FF5A00BA4D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B808CC1DF0FF5A00BA4D2F /* AppDelegate.swift */; };
 		03B808CF1DF0FF5A00BA4D2F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B808CE1DF0FF5A00BA4D2F /* RootViewController.swift */; };
 		03B808D11DF0FF5A00BA4D2F /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B808D01DF0FF5A00BA4D2F /* DataViewController.swift */; };
@@ -68,6 +69,7 @@
 		03594B701E0396F400A4C320 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "Laser Sailing/Subspecs/Maps/Frameworks/GoogleMaps.framework"; sourceTree = "<group>"; };
 		03594B751E039AA600A4C320 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "../../../Downloads/5a212b0fa429156f-GoogleMaps-2.0.1/Subspecs/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = "<group>"; };
 		035BAF341E34A09B00AEA4A1 /* UpcomingEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpcomingEvents.swift; sourceTree = "<group>"; };
+		038200C11E5FD51000DE03F1 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		03B808C91DF0FF5A00BA4D2F /* Laser Sailing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Laser Sailing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03B808CC1DF0FF5A00BA4D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03B808CE1DF0FF5A00BA4D2F /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				03B808D01DF0FF5A00BA4D2F /* DataViewController.swift */,
 				03B808D21DF0FF5A00BA4D2F /* ModelController.swift */,
 				034B2E451DF7AFC200192FB6 /* SecondViewController.swift */,
+				038200C11E5FD51000DE03F1 /* ChatViewController.swift */,
 				035BAF341E34A09B00AEA4A1 /* UpcomingEvents.swift */,
 				0345209A1E5D13E9009055BC /* GoogleService-Info.plist */,
 				03B808D41DF0FF5A00BA4D2F /* Main.storyboard */,
@@ -323,6 +326,7 @@
 				0345209D1E5D1B5D009055BC /* SignInViewController.swift in Sources */,
 				034B2E461DF7AFC200192FB6 /* SecondViewController.swift in Sources */,
 				03594B6F1E03930C00A4C320 /* MapController.swift in Sources */,
+				038200C21E5FD51000DE03F1 /* ChatViewController.swift in Sources */,
 				03B808CD1DF0FF5A00BA4D2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

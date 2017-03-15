@@ -231,10 +231,10 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rha-Yu-SXk">
-                                <rect key="frame" x="16" y="155" width="288" height="258.5"/>
+                                <rect key="frame" x="16" y="155" width="288" height="259"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tXb-Se-uCQ">
-                                        <rect key="frame" x="79.5" y="0.0" width="129" height="29"/>
+                                        <rect key="frame" x="80" y="0.0" width="129" height="29"/>
                                         <segments>
                                             <segment title="Sign In"/>
                                             <segment title="Register"/>
@@ -244,13 +244,13 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1d7-aw-fhT">
-                                        <rect key="frame" x="118" y="58" width="52" height="20.5"/>
+                                        <rect key="frame" x="118" y="58" width="52" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="5hq-ZY-2Je">
-                                        <rect key="frame" x="0.0" y="108.5" width="288" height="30"/>
+                                        <rect key="frame" x="0.0" y="109" width="288" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b8-Km-7Xv">
                                                 <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
@@ -267,7 +267,7 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="93Y-My-FRL">
-                                        <rect key="frame" x="0.0" y="168.5" width="288" height="30"/>
+                                        <rect key="frame" x="0.0" y="169" width="288" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfz-IG-ZW8">
                                                 <rect key="frame" x="0.0" y="0.0" width="74" height="30"/>
@@ -284,7 +284,7 @@ So, next time you go sailing, get out a permanent marker, set the boom to 90 deg
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEs-R1-7KE">
-                                        <rect key="frame" x="120.5" y="228.5" width="47" height="30"/>
+                                        <rect key="frame" x="121" y="229" width="47" height="30"/>
                                         <state key="normal" title="Sign In"/>
                                         <connections>
                                             <action selector="signInButtonTapped:" destination="Msq-sQ-IMj" eventType="touchUpInside" id="abb-Wb-nYe"/>
